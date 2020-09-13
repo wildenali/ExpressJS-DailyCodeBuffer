@@ -12,3 +12,7 @@ Tutorial how to create webserver with ExpressJS NodeJS, tutorial reference from 
 6. Route /person
 
 - run `http://localhost:5000/person`
+
+7. Passing the params
+
+- test `http://localhost:5000/person/alex/21`

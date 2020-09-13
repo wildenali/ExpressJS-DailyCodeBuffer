@@ -10,4 +10,12 @@ app.get("/person", (req, res) => {
   res.send("This is Person Route");
 });
 
+// Pass the params
+app.get("/person/:name/:age", (req, res) => {
+  console.log(req.params);
+  console.log(req.params.name);
+  console.log(req.params.age);
+  res.send(req.params);
+});
+
 app.listen(port, () => console.log(`Listen to Port: ${port}`));
