@@ -21,3 +21,7 @@ Tutorial how to create webserver with ExpressJS NodeJS, tutorial reference from 
 
 - test `http://localhost:5000/person/alex/21?groupBy=name`
 - test `http://localhost:5000/person/alex/21?groupBy=name&abc=xyz`
+
+9. Static Files
+
+- test `http://localhost:5000/index`
