@@ -15,7 +15,7 @@ app.get("/person/:name/:age", (req, res) => {
   console.log(req.params);
   console.log(req.params.name);
   console.log(req.params.age);
-  res.send(req.params);
+  res.send(req.query);
 });
 
 app.listen(port, () => console.log(`Listen to Port: ${port}`));

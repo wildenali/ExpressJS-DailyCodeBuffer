@@ -16,3 +16,8 @@ Tutorial how to create webserver with ExpressJS NodeJS, tutorial reference from 
 7. Passing the params
 
 - test `http://localhost:5000/person/alex/21`
+
+8. Query string
+
+- test `http://localhost:5000/person/alex/21?groupBy=name`
+- test `http://localhost:5000/person/alex/21?groupBy=name&abc=xyz`
