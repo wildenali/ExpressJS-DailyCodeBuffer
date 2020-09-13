@@ -1,0 +1,22 @@
+{
+  "name": "expressjs-dailycodebuffer",
+  "version": "1.0.0",
+  "description": "Tutorial how to create webserver with ExpressJS NodeJS, tutorial reference from https://www.youtube.com/watch?v=ZfzGquJLCAA&amp;list=PLZlQKKTJoway8tq7SaWmKGy2Nlzespuyd&amp;index=6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wildenali/ExpressJS-DailyCodeBuffer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wildenali/ExpressJS-DailyCodeBuffer/issues"
+  },
+  "homepage": "https://github.com/wildenali/ExpressJS-DailyCodeBuffer#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
