@@ -6,4 +6,8 @@ app.get("/", (req, res) => {
   res.send("Helow Test");
 });
 
+app.get("/person", (req, res) => {
+  res.send("This is Person Route");
+});
+
 app.listen(port, () => console.log(`Listen to Port: ${port}`));

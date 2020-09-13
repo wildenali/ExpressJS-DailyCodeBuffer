@@ -9,3 +9,6 @@ Tutorial how to create webserver with ExpressJS NodeJS, tutorial reference from 
 3. How to run `$ node app`, because the file
 4. Install nodemon `$ npm install -g nodemon`, nodemon ini supaya kita tidak perlu nge restart si server filenya, jadi tinggal refresh page aja, pakai nodemon hanya untuk develop not for production
 5. run pakai nodemon `$ nodemon app.js` di terminal
+6. Route /person
+
+- run `http://localhost:5000/person`
