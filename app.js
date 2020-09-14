@@ -67,6 +67,13 @@ app.get("/api/movies/:id", (req, res) => {
 
 // CREATE
 app.post("/api/movies", (req, res) => {
+  if (!req.body.name || req.body.name.length < 3) {
+    res
+      .status(400)
+      .send("The Name of Moview is not present or less than 3 characters");
+    return;
+  }
+
   let movie = {
     id: movies.length + 1,
     name: req.body.name,
