@@ -33,3 +33,22 @@ Tutorial how to create webserver with ExpressJS NodeJS, tutorial reference from 
 11. GET Detail
 
 - test `http://localhost:5000/api/movies/2`
+
+12. CREATE, post data
+
+- Open postman
+- Pastikan pada POST request
+- Setup postman sebagai `POST` method
+- Masukkan `http://localhost:5000/api/members`
+- Pilih `Body`, setelah itu kemudian pilih `raw`
+- Ganti mode `text` jadi `JSON (application/json`
+- Masukkan di raw tersebut
+
+```
+{
+	"name": "Frozen"
+}
+```
+
+- Click `Send`
+- Cek Hasilnya di Body > Pretty bagian bawah postman

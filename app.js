@@ -3,6 +3,8 @@ const app = express();
 const port = process.env.PORT || "5000";
 const path = require("path");
 
+app.use(express.json()); // ini middleware
+
 const movies = [
   {
     id: 1,
@@ -60,6 +62,16 @@ app.get("/api/movies/:id", (req, res) => {
   if (!movie) {
     res.send(`No movie found for the id: ${req.params.id}`);
   }
+  res.send(movie);
+});
+
+// CREATE
+app.post("/api/movies", (req, res) => {
+  let movie = {
+    id: movies.length + 1,
+    name: req.body.name,
+  };
+  movies.push(movie);
   res.send(movie);
 });
 
