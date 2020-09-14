@@ -54,4 +54,13 @@ app.get("/api/movies", (req, res) => {
   res.send(movies);
 });
 
+// GET Detail
+app.get("/api/movies/:id", (req, res) => {
+  let movie = movies.find((apapun) => apapun.id === parseInt(req.params.id));
+  if (!movie) {
+    res.send(`No movie found for the id: ${req.params.id}`);
+  }
+  res.send(movie);
+});
+
 app.listen(port, () => console.log(`Listen to Port: ${port}`));

@@ -28,4 +28,8 @@ Tutorial how to create webserver with ExpressJS NodeJS, tutorial reference from 
 
 10. GET
 
-- test `http://localhost:5000/index`
+- test `http://localhost:5000/api/movies`
+
+11. GET Detail
+
+- test `http://localhost:5000/api/movies/2`
