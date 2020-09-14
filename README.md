@@ -82,7 +82,7 @@ Tutorial how to create webserver with ExpressJS NodeJS, tutorial reference from 
 - Click `Send`
 - Cek Hasilnya di Body > Pretty bagian bawah postman
 
-12. UPDATE, PUT data
+14. UPDATE, PUT data
 
 - Open postman
 - Pastikan pada PUT request
