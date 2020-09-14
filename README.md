@@ -25,3 +25,7 @@ Tutorial how to create webserver with ExpressJS NodeJS, tutorial reference from 
 9. Static Files
 
 - test `http://localhost:5000/index`
+
+10. GET
+
+- test `http://localhost:5000/index`
