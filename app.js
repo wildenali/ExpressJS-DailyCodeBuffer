@@ -94,4 +94,30 @@ app.post("/api/movies", (req, res) => {
   res.send(movie);
 });
 
+// PUT, Update data
+app.put("/api/movies/:id", (req, res) => {
+  // Find the movie based on Id, If not found Throw Error
+  let movie = movies.find((apapun) => apapun.id === parseInt(req.params.id));
+  if (!movie) {
+    res.send(`No movie found for the Id: ${req.params.id}`);
+  }
+
+  // If found need to update
+  // Validation fot request
+  // Once validate update the Movies
+  const schema = Joi.object({
+    name: Joi.string().min(3).required(),
+  });
+  const result = schema.validate(req.body);
+  console.log(result);
+  if (result.error) {
+    res.status(400).send(result.error.details[0].message);
+    return;
+  }
+
+  // return that movie
+  movie.name = req.body.name;
+  res.send(movie);
+});
+
 app.listen(port, () => console.log(`Listen to Port: ${port}`));

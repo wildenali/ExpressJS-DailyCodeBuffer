@@ -39,7 +39,7 @@ Tutorial how to create webserver with ExpressJS NodeJS, tutorial reference from 
 - Open postman
 - Pastikan pada POST request
 - Setup postman sebagai `POST` method
-- Masukkan `http://localhost:5000/api/members`
+- Masukkan `http://localhost:5000/api/movies`
 - Pilih `Body`, setelah itu kemudian pilih `raw`
 - Ganti mode `text` jadi `JSON (application/json`
 - Masukkan di raw tersebut
@@ -60,7 +60,7 @@ Tutorial how to create webserver with ExpressJS NodeJS, tutorial reference from 
 - Open postman
 - Pastikan pada POST request
 - Setup postman sebagai `POST` method
-- Masukkan `http://localhost:5000/api/members`
+- Masukkan `http://localhost:5000/api/movies`
 - Pilih `Body`, setelah itu kemudian pilih `raw`
 - Ganti mode `text` jadi `JSON (application/json`
 - Masukkan di raw tersebut
@@ -76,6 +76,25 @@ Tutorial how to create webserver with ExpressJS NodeJS, tutorial reference from 
 ```
 {
 
+}
+```
+
+- Click `Send`
+- Cek Hasilnya di Body > Pretty bagian bawah postman
+
+12. UPDATE, PUT data
+
+- Open postman
+- Pastikan pada PUT request
+- Setup postman sebagai `POST` method
+- Masukkan `http://localhost:5000/api/movies/1`
+- Pilih `Body`, setelah itu kemudian pilih `raw`
+- Ganti mode `text` jadi `JSON (application/json`
+- Masukkan di raw tersebut
+
+```
+{
+	"name": "Frozen 2"
 }
 ```
 
