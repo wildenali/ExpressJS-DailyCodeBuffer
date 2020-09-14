@@ -56,3 +56,28 @@ Tutorial how to create webserver with ExpressJS NodeJS, tutorial reference from 
 13. Joi module, for validation
 
 - Install joi `$ npm i @hapi/joi`
+
+- Open postman
+- Pastikan pada POST request
+- Setup postman sebagai `POST` method
+- Masukkan `http://localhost:5000/api/members`
+- Pilih `Body`, setelah itu kemudian pilih `raw`
+- Ganti mode `text` jadi `JSON (application/json`
+- Masukkan di raw tersebut
+
+```
+{
+	"name": "Frozen"
+}
+```
+
+- coba juga kalau kirim kosong, apa hasilnya
+
+```
+{
+
+}
+```
+
+- Click `Send`
+- Cek Hasilnya di Body > Pretty bagian bawah postman

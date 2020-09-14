@@ -68,6 +68,17 @@ app.get("/api/movies/:id", (req, res) => {
 
 // CREATE
 app.post("/api/movies", (req, res) => {
+  const schema = Joi.object({
+    name: Joi.string().min(3).required(), // minimal 3 karakter untuk name nya
+  });
+
+  const result = schema.validate(req.body);
+  console.log(result);
+  if (result.error) {
+    res.status(400).send(result.error.details[0].message);
+    return;
+  }
+
   if (!req.body.name || req.body.name.length < 3) {
     res
       .status(400)
