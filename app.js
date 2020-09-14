@@ -5,6 +5,10 @@ const path = require("path");
 const Joi = require("@hapi/joi");
 
 app.use(express.json()); // ini middleware
+app.use("/api/movies", (req, res, next) => {
+  console.log(req.url, req.method);
+  next();
+});
 
 const movies = [
   {
