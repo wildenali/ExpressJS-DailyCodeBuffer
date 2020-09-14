@@ -52,3 +52,7 @@ Tutorial how to create webserver with ExpressJS NodeJS, tutorial reference from 
 
 - Click `Send`
 - Cek Hasilnya di Body > Pretty bagian bawah postman
+
+13. Joi module, for validation
+
+- Install joi `$ npm i @hapi/joi`
