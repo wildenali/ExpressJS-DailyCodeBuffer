@@ -100,3 +100,12 @@ Tutorial how to create webserver with ExpressJS NodeJS, tutorial reference from 
 
 - Click `Send`
 - Cek Hasilnya di Body > Pretty bagian bawah postman
+
+15. DELETE, delete data
+
+- Open postman
+- Pastikan pada DELETE request
+- Setup postman sebagai `DELETE` method
+- Masukkan `http://localhost:5000/api/movies/1`
+- Click `Send`
+- Cek Hasilnya di Body > Pretty bagian bawah postman

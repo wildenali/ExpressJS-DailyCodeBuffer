@@ -120,4 +120,18 @@ app.put("/api/movies/:id", (req, res) => {
   res.send(movie);
 });
 
+// DELETE
+app.delete("/api/movies/:id", (req, res) => {
+  // Find the movie based on Id
+  let movie = movies.find((apapun) => apapun.id === parseInt(req.params.id));
+  if (!movie) {
+    res.send(`No movie found for the Id: ${req.params.id}`);
+  }
+
+  // Remove that object from that Index
+  const index = movies.indexOf(movie);
+  movies.splice(index, 1); // 1 element
+  res.send(movie);
+});
+
 app.listen(port, () => console.log(`Listen to Port: ${port}`));
