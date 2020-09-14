@@ -109,3 +109,5 @@ Tutorial how to create webserver with ExpressJS NodeJS, tutorial reference from 
 - Masukkan `http://localhost:5000/api/movies/1`
 - Click `Send`
 - Cek Hasilnya di Body > Pretty bagian bawah postman
+
+16. Cek Midleware, cek aja semua http request nya, GET, CREATE, UPDATE, DELETE
